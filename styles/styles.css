@@ -1,0 +1,199 @@
+/*** Start Global ***/
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+.container{width: 80%;margin: auto;}
+
+.clearfix{clear:both;}
+
+ul{margin:0;padding:0;}
+
+.button{
+	background-color: #E8491D;
+	border: none;
+	padding: 10px 20px;
+	color: #FFF;
+	outline: none;
+	cursor:pointer;
+}
+/*** End Global ***/
+
+/*** Start Header ***/
+header{
+	background-color: #35424A;
+	overflow: hidden;
+	color: #FFF;
+	min-height: 100px;
+	padding-top: 15px;
+	border-bottom: 3px solid #E8491D;
+}
+
+header .branding{float: left;}
+
+header .branding h1 span{color: #E8491D;}
+
+header nav{float: right;margin-top: 35px;} 
+
+header nav ul li{display: inline-block;padding: 0 10px;list-style: none;}
+
+header nav ul li a{
+	text-decoration: none;
+	color: #FFF;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+header nav ul li a:hover{color:#CCC;font-weight: bold;} 
+
+header nav ul .active a{color: #E8491D;font-weight: bold;}
+
+/*** End Header ***/
+
+/*** Start Showcase ***/
+#showcase{
+	min-height: 300px;
+	text-align: center;
+	background: url(../images/showcase.jpg) no-repeat 0 -400px;
+	color: #FFF;
+	overflow: hidden;
+}
+
+#showcase h1{
+	margin: 0;
+	padding-top: 10%;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+#showcase p{font-size: 20px;}
+/*** End Showcase ***/
+
+/*** Start Newsletter ***/
+#newsletter{
+	background-color: #35424A;
+	color: #FFF;
+	overflow: hidden;
+	padding: 15px;
+	
+}
+
+#newsletter h1{float: left;}
+
+#newsletter form{float: right;margin-top: 20px;}
+
+#newsletter form input[type="email"]{
+	padding: 5px;
+	width: 200px;
+	height: 20px;
+	outline: none;
+}
+/*** End Newsletter ***/
+
+/*** Start Boxes ***/
+#boxes{min-height: 200px;padding: 70px 0;}
+
+#boxes .box{width: 31.333%;float: left;text-align:center;}
+
+#boxes .box:nth-of-type(n+2){margin-left: 3%;}
+
+#boxes .box:first-of-type i{color: #E44D26;}
+#boxes .box:nth-of-type(2) i{color: #2162AF;}
+#boxes .box:last-of-type i{color: #ED1C24;}
+
+/*** End Boxes ***/
+
+/*** Start Footer ***/
+footer{
+	padding: 20px;
+	text-align: center;
+	background-color: #E8491D;
+	color: #FFF;
+}
+/*** End Footer ***/
+
+
+/*********** Start About Page **************/
+#about {overflow: hidden;padding: 20px 0;}
+
+#about article{float: left;width: 65%;}
+
+#about article h2{margin-top: 0;}
+
+#about article p:last-of-type{background-color: #35424A;color: #FFF;padding: 10px;}
+
+#about aside{
+	float: right;
+	width: 28%;
+	background-color: #35424A;
+	color: #FFF;
+	padding: 1%;
+}
+/*********** End About Page **************/
+
+
+/*********** Start Services Page **************/
+#services{overflow: hidden;}
+
+#services article{float:left;width: 65%;}
+
+#services li{
+	list-style:none;
+	background-color: #E6E6E6;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+#services aside{
+	float:right;
+	width: 28%;
+	background-color: #35424A;
+	margin-top: 10px;
+	color: #FFF;
+	padding: 2% 0 2% 2%
+}
+
+#services aside input{
+	width: 80%;
+	height: 25px;
+	margin-bottom: 20px;
+	padding: 5px 10px;
+	outline: none;
+}
+
+#services aside textarea{
+	width: 80%;
+	height: 150px;
+	padding: 5px 10px;
+	outline: none;
+}
+/*********** End Services Page **************/
+
+@media (max-width: 768px){
+	header .branding, header nav,
+	#newsletter h1, #newsletter form,
+	#boxes .box, #about article,#about aside,
+	#services article, #services aside{float:none;width: 100%;text-align:center;}
+	
+	header{padding-bottom: 30px;}
+
+	.box:nth-of-type(n+2){margin-top: 50px;}
+
+	button{display: block;width: 100%;margin-bottom: 15px;}
+
+	#newsletter form input[type="email"]{
+		width:100%;
+		box-sizing: border-box;
+		height: 35px;
+		margin-bottom: 5px;
+	}
+
+	#services form{padding-right: 2%;}
+
+	#services aside input{height: 35px;}
+
+	#services aside input, #services aside textarea{width: 100%;box-sizing: border-box;}
+}
